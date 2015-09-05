@@ -3,6 +3,6 @@ from django.contrib import admin
 from hello.views import hello, index
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', index),
     url(r'^hello/$', hello),
 ]
